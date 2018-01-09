@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backGray"
+    android:padding="2pt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="3pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivUser"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/userback"
+                app:srcCompat="@drawable/anonymous" />
+
+            <TextView
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="3pt"
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:text="Anonymous"
+                android:textColor="@color/Cyan"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="@color/White"
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="30-12-17" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="8pt"
+            android:id="@+id/tvTweetPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post that user has posted"
+            android:layout_marginLeft="5pt"
+            android:textColor="@color/AntiqueWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_marginTop="2pt"
+            android:id="@+id/ivPost"
+            android:layout_width="match_parent"
+            android:layout_height="150pt"
+            app:srcCompat="@drawable/twitter_icon"
+            android:layout_marginBottom="3pt"/>
+
+        <LinearLayout
+            android:layout_marginTop="3pt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivFav"
+                android:layout_width="wrap_content"
+                android:layout_height="15pt"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/star_off" />
+
+            <ImageView
+                android:id="@+id/ivCommentShow"
+                android:layout_width="wrap_content"
+                android:layout_height="15pt"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_comment_white_24dp" />
+
+            <Space
+                android:layout_width="70pt"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
